@@ -1,0 +1,237 @@
+strict digraph {
+graph [ compound=true ]
+
+
+subgraph cluster_workbench {
+label = "Workbench"
+Bench
+BlackBoxes
+Bench -> GreenBoxes
+Bench -> BlueBoxes
+Bench -> ClearBoxes
+}
+subgraph cluster_bigshelf {
+label = "Big Shelves"
+SA [shape="polygon" style="filled" fillcolor="#ff7f0e"]
+    SB [shape="polygon" style="filled" fillcolor="#ff7f0e"]
+    SC [shape="polygon" style="filled" fillcolor="#ff7f0e"]
+node[group=""]
+SC1 -> SC2 -> SC3 -> SC4 -> SC5 -> SC6
+node[group=""]
+SB1 -> SB2 -> SB3 -> SB4 -> SB5 -> SB6
+node[group=""]
+SA1 -> SA2 -> SA3 -> SA4 -> SA5 -> SA6
+subgraph structs {
+    node [shape=record]
+    struct3 [label="SC\>|{{SC1.1|SC1.2|SC1.3|SC1.4|SC1.5}|{SC2.1|SC2.2|SC2.3|SC2.4|SC2.5}|{SC3.1|SC3.2|SC3.3|SC3.4|SC3.5}|{SC4.1|SC4.2|SC4.3|SC4.4|SC4.5}|{SC5.1|SC5.2|SC5.3|SC5.4|SC5.5}|{SC6.1|SC6.2|SC6.3|SC6.4|SC6.5}}|SB\>|{{SB1.1|SB1.2|SB1.3|SB1.4|SB1.5}|{SB2.1|SB2.2|SB2.3|SB2.4|SB2.5}|{SB3.1|SB3.2|SB3.3|SB3.4|SB3.5}|{SB4.1|SB4.2|SB4.3|SB4.4|SB4.5}|{SB5.1|SB5.2|SB5.3|SB5.4|SB5.5}|{SB6.1|SB6.2|SB6.3|SB6.4|SB6.5}}|SA\>|{{SA1.1|SA1.2|SA1.3|SA1.4|SA1.5}|{SA2.1|SA2.2|SA2.3|SA2.4|SA2.5}|{SA3.1|SA3.2|SA3.3|SA3.4|SA3.5}|{SA4.1|SA4.2|SA4.3|SA4.4|SA4.5}|{SA5.1|SA5.2|SA5.3|SA5.4|SA5.5}|{SA6.1|SA6.2|SA6.3|SA6.4|SA6.5}}|White Stakes"]
+}
+
+
+
+
+subgraph ro {
+ SA -> SA1
+ SB -> SB1
+ SC -> SC1
+            rankdir=TD
+             }
+subgraph shelfC1 {
+        {
+            SC1 -> SC15
+            SC1 -> SC14
+            SC1 -> SC13
+            SC1 -> SC12
+            SC1 -> SC11
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfC2 {
+        {
+            SC2 -> SC25
+            SC2 -> SC24
+            SC2 -> SC23
+            SC2 -> SC22
+            SC2 -> SC21
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfC3 {
+        {
+            SC3 -> SC35
+            SC3 -> SC34
+            SC3 -> SC33
+            SC3 -> SC32
+            SC3 -> SC31
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfC4 {
+        {
+            SC4 -> SC45
+            SC4 -> SC44
+            SC4 -> SC43
+            SC4 -> SC42
+            SC4 -> SC41
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfC5 {
+        {
+            SC5 -> SC55
+            SC5 -> SC54
+            SC5 -> SC53
+            SC5 -> SC52
+            SC5 -> SC51
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfC6 {
+        {
+            SC6 -> SC65
+            SC6 -> SC64
+            SC6 -> SC63
+            SC6 -> SC62
+            SC6 -> SC61
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfB1 {
+        {
+            SB1 -> SB15
+            SB1 -> SB14
+            SB1 -> SB13
+            SB1 -> SB12
+            SB1 -> SB11
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfB2 {
+        {
+            SB2 -> SB25
+            SB2 -> SB24
+            SB2 -> SB23
+            SB2 -> SB22
+            SB2 -> SB21
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfB3 {
+        {
+            SB3 -> SB35
+            SB3 -> SB34
+            SB3 -> SB33
+            SB3 -> SB32
+            SB3 -> SB31
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfB4 {
+        {
+            SB4 -> SB45
+            SB4 -> SB44
+            SB4 -> SB43
+            SB4 -> SB42
+            SB4 -> SB41
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfB5 {
+        {
+            SB5 -> SB55
+            SB5 -> SB54
+            SB5 -> SB53
+            SB5 -> SB52
+            SB5 -> SB51
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfB6 {
+        {
+            SB6 -> SB65
+            SB6 -> SB64
+            SB6 -> SB63
+            SB6 -> SB62
+            SB6 -> SB61
+            rankdir=TB
+            rank=same
+        }
+   }
+subgraph shelfA1 {
+        {
+            SA1 -> SA15
+            SA1 -> SA14
+            SA1 -> SA13
+            SA1 -> SA12
+            SA1 -> SA11
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfA2 {
+        {
+            SA2 -> SA25
+            SA2 -> SA24
+            SA2 -> SA23
+            SA2 -> SA22
+            SA2 -> SA21
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfA3 {
+        {
+            SA3 -> SA35
+            SA3 -> SA34
+            SA3 -> SA33
+            SA3 -> SA32
+            SA3 -> SA31
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfA4 {
+        {
+            SA4 -> SA45
+            SA4 -> SA44
+            SA4 -> SA43
+            SA4 -> SA42
+            SA4 -> SA41
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfA5 {
+        {
+            SA5 -> SA55
+            SA5 -> SA54
+            SA5 -> SA53
+            SA5 -> SA52
+            SA5 -> SA51
+            rankdir=TB
+            rank=same
+        }
+   }
+   subgraph shelfA6 {
+        {
+            SA6 -> SA65
+            SA6 -> SA64
+            SA6 -> SA63
+            SA6 -> SA62
+            SA6 -> SA61
+            rankdir=TB
+            rank=same
+        }
+   }
+}
+}

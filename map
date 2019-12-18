@@ -1,0 +1,21 @@
+strict digraph {
+graph [ compound=true ]
+
+
+subgraph parts {
+        node [shape=record]
+        struct0 [label="{{SD1.1|SD1.2|SD1.3|SD1.4}| {SD2.1|SD2.2|SD2.3|SD2.4}| {SD3.1|SD3.2|SD3.3|SD3.4}| {SD4.1|SD4.2|SD4.3|SD4.4}| {SD5.1|SD5.2|SD5.3|SD5.4}| {SD6.1|SD6.2|SD6.3|SD6.4}| {SD7.1|SD7.2|SD7.3|SD7.4}} "]
+    
+    }
+
+subgraph workbench{
+    node [shape=record]
+    struct1 [label="{Tools|Bench|{GreenBoxes|BlueBoxes|ClearBoxes}}|Black Boxes"]
+    }
+
+subgraph shelves{
+    node [shape=record]
+    struct3 [label="{{SC\>|{{SC1.1|SC1.2|SC1.3|SC1.4|SC1.5}|{SC2.1|SC2.2|SC2.3|SC2.4|SC2.5}|{SC3.1|SC3.2|SC3.3|SC3.4|SC3.5}|{SC4.1|SC4.2|SC4.3|SC4.4|SC4.5}|{SC5.1|SC5.2|SC5.3|SC5.4|SC5.5}|{SC6.1|SC6.2|SC6.3|SC6.4|SC6.5}}|SB\>|{{SB1.1|SB1.2|SB1.3|SB1.4|SB1.5}|{SB2.1|SB2.2|SB2.3|SB2.4|SB2.5}|{SB3.1|SB3.2|SB3.3|SB3.4|SB3.5}|{SB4.1|SB4.2|SB4.3|SB4.4|SB4.5}|{SB5.1|SB5.2|SB5.3|SB5.4|SB5.5}|{SB6.1|SB6.2|SB6.3|SB6.4|SB6.5}}|SA\>|{{SA1.1|SA1.2|SA1.3|SA1.4|SA1.5}|{SA2.1|SA2.2|SA2.3|SA2.4|SA2.5}|{SA3.1|SA3.2|SA3.3|SA3.4|SA3.5}|{SA4.1|SA4.2|SA4.3|SA4.4|SA4.5}|{SA5.1|SA5.2|SA5.3|SA5.4|SA5.5}|{SA6.1|SA6.2|SA6.3|SA6.4|SA6.5}}|White Stakes}|Big Shelves}"]
+    }
+
+} // EOF

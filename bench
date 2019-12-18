@@ -1,0 +1,4 @@
+subgraph workbench {
+	node [shape=record]
+	struct1 [label="{Bench|{GreenBoxes|BlueBoxes|ClearBoxes}|Black Boxes"]
+}
